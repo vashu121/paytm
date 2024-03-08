@@ -1,6 +1,6 @@
 const mongoose=require("mongoose");
 
-const url="mongodb+srv://vashumaurya121:1HBqxSSNRrBTuhUT@payapp.yz4fbgb.mongodb.net/";
+const url="your MongoDB password";
 mongoose.connect(url)
 .then(()=>{
     console.log("connected to the database");

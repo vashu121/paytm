@@ -33,7 +33,7 @@ export const Signup = () => {
         }} placeholder="123456" label={"Password"} />
         <div className="pt-4">
           <Button onClick={async () => {
-            await axios.post("http://localhost:3000/api/v1/user/signup", {
+            await axios.post("https://paytm-4.onrender.com/api/v1/user/signup", {
               username: username,
               firstName: firstName,
               lastName: lastName,

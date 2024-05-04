@@ -1,11 +1,13 @@
 // backend/routes/user.js
 const express = require('express');
+require('dotenv').config();
 
+const JWT_SECRET =process.env.JWT_SECRET;
 const router = express.Router();
 const zod = require("zod");
 const { User, Account } = require("../db");
 const jwt = require("jsonwebtoken");
-const { JWT_SECRET } = require("../config");
+
 const  { authMiddleware } = require("../middleware/auth");
 
 const signupBody = zod.object({
